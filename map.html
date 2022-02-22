@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    <title>Event Click LatLng</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src = "map.js"> </script>
+    
+    <script src = "data/Circuit_Data.js"></script>
+    <link rel="stylesheet" href="map.css"> </link>
+  </head>
+  <body>
+    <div id="map"></div>
+    <p id="heading"> Heading: </p>
+    <p id="zoom"> Zoom: </p>
+    <p id="geotags"> Current geotags: -, -</p>
+    <button id="testButton"> Animation </button>
+    <button id="testButton2"> Stop </button>
+    <button id="testButton3"> Move   </button>
+    <div id = "tracks"> </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+      async
+    ></script>
+    <script src = "animation.js"> </script>
+  </body>
+</html>
